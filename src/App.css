@@ -46,7 +46,7 @@
 
 #Table {
     width: 100%;
-    height: 90%;
+    height: auto;
     color: rgb(243, 236, 236);
     font-size: 16px;
     font-weight: 500;
@@ -103,5 +103,5 @@
     text-align: left !important;
 }
 tbody{
-    width: 100%;
+    width: auto;
 }
