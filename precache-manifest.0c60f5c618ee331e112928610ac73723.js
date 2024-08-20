@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1e9e245a28a9d0b30b9ef4366107e91",
+    "revision": "408c5a468bf44a5db0fcc9a473361e79",
     "url": "/crypto-chart/index.html"
   },
   {
-    "revision": "abbdba2e86d41c0cdb74",
-    "url": "/crypto-chart/static/css/main.8bca819f.chunk.css"
+    "revision": "ce313371fb54875c1359",
+    "url": "/crypto-chart/static/css/main.b792f091.chunk.css"
   },
   {
     "revision": "f18e9280047d2c2f67b5",
     "url": "/crypto-chart/static/js/2.afef58d2.chunk.js"
   },
   {
-    "revision": "abbdba2e86d41c0cdb74",
+    "revision": "ce313371fb54875c1359",
     "url": "/crypto-chart/static/js/main.c4cf9832.chunk.js"
   },
   {
