@@ -66,6 +66,7 @@
 }
 
 .row>td {
+    width: auto;
     height: 50px;
     text-align: right;
     border-bottom: 2px solid rgb(243, 236, 236);
