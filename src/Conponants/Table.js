@@ -1,10 +1,11 @@
 import React from 'react';
 import '../App.css';
-const Table = ({ data }) => {
+const Table = ({ data, searchValue }) => {
   return (
     <table id="Table">
       <tbody>
-        {data.map((item) => (
+        {data.filter((item) => item.name.toLowerCase().includes(searchValue.toLowerCase()) || item.symbol.toLowerCase().includes(searchValue.toLowerCase()))
+        .map((item) => (
 
           <tr className="row" key={item.id}>
             <td>
