@@ -8,16 +8,18 @@ const SearchAndSoetingBar = () => {
   const [sortedData, setSortedData] = useState([]);
 
   useEffect(() => {
-    const fetchData = () => {
-      fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false')
-        .then((res) => res.json())
+    const fetchData = async () => {
+      try {
+        const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false');
+        res.json()
         .then((result) => {
           setData(result);
           setSortedData(result);
-        })
-        .catch((error) => {
-          console.error(error);
+          console.dir(result);
         });
+      } catch (error) {
+        console.error(error);
+      }
     };
 
     fetchData();
@@ -43,7 +45,8 @@ const SearchAndSoetingBar = () => {
         <div
           id="sort-btn2"
           className="btn"
-          onClick={() => setSortedData([...data].sort((a, b) => b.ath_change_percentage - a.ath_change_percentage))}
+          onClick={() => setSortedData([...data].sort((a, b) => b.market_cap_change_percentage_24h - a.market_cap_change_percentage_24h
+          ))}
         >
           Sort By Percentage
         </div>

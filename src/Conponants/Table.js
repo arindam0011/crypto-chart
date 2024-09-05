@@ -17,7 +17,8 @@ const Table = ({ data, searchValue }) => {
             <td className="symbol">{item.symbol.toUpperCase()}</td>
             <td className="price">${item.current_price}</td>
             <td className="volume">${item.total_volume}</td>
-            <td className="percentage" style={item.ath_change_percentage >= 0 ? { color: "green" } : { color: "red" }}>{item.ath_change_percentage.toFixed(2)}%</td>
+            <td className="percentage" style={item.market_cap_change_percentage_24h >= 0 ? { color: "green" } : { color: "red" }}>{item.market_cap_change_percentage_24h
+.toFixed(2)}%</td>
             <td className="market_cap">Mkt Cap: ${item.market_cap}</td>
           </tr>
         ))}
